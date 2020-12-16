@@ -1,0 +1,28 @@
+.wrapper {
+
+}
+
+.wrapper__searchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper__searchContainer > p {
+    color: #B3C5CD;
+    font-size: 16px;
+}
+
+.wrapper__search {
+    flex: 0.60;
+}
+
+@media (max-width: 668px) {
+    .wrapper__searchContainer {
+        display: block;
+    }
+
+    .wrapper__search {
+        margin-top: 12px;
+    }
+}

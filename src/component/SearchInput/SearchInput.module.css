@@ -1,0 +1,23 @@
+.searchInput {
+    background-color: var(--input-background);
+    border-radius: 12px;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.searchInput > input {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 8px 12px;
+}
+
+.searchInput > input:focus {
+    outline: none;
+}
+
+.searchInput> input::placeholder {
+    color: #B3C5CD;
+}

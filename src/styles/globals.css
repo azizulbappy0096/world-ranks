@@ -1,0 +1,30 @@
+:root {
+  --background-color: #E5E5E5;
+  --input-background: #EEF3F6;
+  --text-secondary: #B3C5CD;
+}
+
+
+body {
+  padding: 0 60px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: var(--background-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 668px) {
+  body {
+    padding: 0 12px;
+  }
+}

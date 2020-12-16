@@ -1,0 +1,107 @@
+.countryTable {
+  margin-top: 16px;
+}
+
+.countryTable__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.countryTable__header > button {
+  flex: 1;
+  border: none;
+  background-color: transparent;
+  padding: 20px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  margin-left: 4px;
+  font-size: 14px !important;
+  color: #21B6B7;
+}
+
+.countryTable__header > button:focus {
+  outline: none;
+}
+
+.country {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px 8px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+}
+
+.country:hover {
+  -webkit-box-shadow: 2px 9px 22px -5px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 2px 9px 22px -5px rgba(0, 0, 0, 0.18);
+  box-shadow: 2px 9px 22px -5px rgba(0, 0, 0, 0.18);
+  transform: translateY(-4px);
+}
+
+.country__name,
+.country__population,
+.country__area,
+.country__gini {
+  flex: 1;
+  text-align: center;
+  color: #124A63;
+}
+
+.country__name {
+  display: flex;
+  align-items: center;
+}
+
+.country__name > p{
+  margin-left: 8px;
+  
+}
+
+.country__name > img {
+  width: 40px;
+  object-fit: contain;
+  border-radius: 2px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 10px -4px rgba(107,105,107,1);
+  -moz-box-shadow: 0px 0px 10px -4px rgba(107,105,107,1);
+  box-shadow: 0px 0px 10px -4px rgba(107,105,107,1);
+}
+
+.countryTable__header > button:first-child,
+.country__name {
+  text-align: start;
+  justify-content: flex-start;
+}
+
+.country__gini {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.country__giniPercent {
+  background-color: #F2F5F7;
+  border-radius: 4px;
+  width: 80%;
+  height: 6px;
+  overflow: hidden;
+}
+
+@media (max-width: 668px) {
+  .countryTable__buttonMobile, .country__area,
+  .country__gini {
+    display: none !important;
+  }
+}
