@@ -62,7 +62,7 @@ export default function CountryPage({ country }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title> World Ranks </title>
+        <title> {country.name} </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
