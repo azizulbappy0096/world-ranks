@@ -68,7 +68,7 @@ export default function CountryPage({ country }) {
 
       <header className={styles.header}>
         <Link href="/">
-        <img src="/Logo.svg" alt="logo" />
+        <img src="/Logo.svg" alt="logo" style={{cursor: "pointer"}} />
         </Link>
       </header>
 
