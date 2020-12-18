@@ -13,8 +13,8 @@ const TableBody = ({ countries }) => {
         <img src={country.flag} alt={country.name} />
         <p>{country.name}</p>
         </div>
-      <div className={styles.country__population}>{country.population}</div>
-      <div className={styles.country__area}>{country.area}</div>
+      <div className={styles.country__population}>{new Intl.NumberFormat('en-IN', ).format(country.population)}</div>
+      <div className={styles.country__area}>{new Intl.NumberFormat('en-IN', ).format(country.area)}</div>
       <div className={styles.country__gini}>
         <div className={styles.country__giniPercent}>
           <div style={{backgroundColor: "#21B6B7", width: `${!country.gini ? 0 : country.gini}%`, height: "100%"}}></div>

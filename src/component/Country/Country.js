@@ -41,11 +41,11 @@ export default function Country({ country }) {
         </div>
         <div className={styles.left__info}>
           <div className={styles.left__leftInfo}>
-            <h4> {country.population} </h4>
+            <h4> {new Intl.NumberFormat('en-IN', ).format(country.population)} </h4>
             <small> Population </small>
           </div>
           <div className={styles.left__rightInfo}>
-            <h4> {country.area} </h4>
+            <h4> {new Intl.NumberFormat('en-IN', ).format(country.area)} </h4>
             <small> Area (km) </small>
           </div>
         </div>
