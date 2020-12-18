@@ -59,7 +59,7 @@ export default function Main({ countries }) {
         <div className={styles.wrapper__search}>
           <SearchInput
             name="search"
-            onChange={(e) => sortBySearch(e.target.value)}
+            onChange={(e) => sortBySearch(e.target.value.toLowerCase())}
           />
         </div>
       </section>
