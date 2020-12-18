@@ -136,7 +136,7 @@
 
 @media (max-width: 848px) {
     .countryContainer {
-        grid-template-rows: minmax(auto, 1fr) 2fr;
+        grid-template-rows: minmax(auto, auto) 2fr;
         grid-template-columns: none;
     }
 }
